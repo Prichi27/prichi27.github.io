@@ -40,7 +40,7 @@ const ThreeContainer = () => {
     Camera.aspect =  window.innerWidth /  window.innerHeight;
     Camera.updateProjectionMatrix();
 
-    const geometry = new Three.SphereGeometry(1, 100, 100, 20);
+    const geometry = new Three.BoxGeometry(1, 1, 1, 20);
     const Material = new Three.MeshStandardMaterial();
     Material.color = new Three.Color(0xd19a97);
     
