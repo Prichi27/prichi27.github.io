@@ -95,7 +95,13 @@ const ThreeContainer = () => {
       mouseY = event.clientY  - (window.innerHeight / 2);
     }
 
+    const animatePointsTouch = (event: TouchEvent) => {
+      mouseX = event.touches[0].clientX - (window.innerWidth / 2);
+      mouseY = event.touches[0].clientY  - (window.innerHeight / 2);
+    }
+
     document.addEventListener('mousemove', animatePoints);
+    document.addEventListener('touchmove', animatePointsTouch);
 
 
     const tick = () => {
