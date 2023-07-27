@@ -5,7 +5,13 @@ import { ThreeContainer } from "./modules/three";
 
 const App = () => {
   return (
-    <ThreeContainer />
+    <div className="bg-main flex justify-center items-center w-full h-full">
+      <ThreeContainer />
+      <div className="h-100 z-10 w-full text-white flex flex-col justify-center items-center">
+        <h1 className="text-6xl uppercase">Under</h1>
+        <h1 className="text-6xl uppercase">Construction</h1>
+      </div>
+    </div>
     // <div className="flex justify-center min-h-screen max-h-fit min-w-full bg-main">
 
     //   {/* Main Resume Body */}
